@@ -10,6 +10,8 @@
               type="image/x-icon"/> <!-- Favicon -->
     </head>
     <body>
+     
+
         
         <div class="content">
             <a classe="links" id="realizarcadastro"> </a>    
@@ -17,9 +19,9 @@
         </div>
         
         <div id="login">
+            
         <form method="post" 
-              action="Validar_senha.js" 
-              onSubmit="return validacampo()">
+              action="login.php">
             
             <br><br><br><br>
             <center>
@@ -27,17 +29,17 @@
             <h1> Login </h1>
             <h3> Seja muito bem-vindo e que a força esteja com você! </h3>
             <p>
-                <label for="login_user"> E-mail: </label>
-                <input id="login_user" 
-                       name="login_user" 
+                <label for="Email"> E-mail: </label>
+                <input id="Email" 
+                       name="Email" 
                        required="required" 
                        type ="email" 
                        placeholder="Informe seu e-mail">
             </p>
             <p>
-                <label for="senha_user"> Senha: </label>
-                <input id="senha_user" 
-                       name="senha_user" 
+                <label for="Senha"> Senha: </label>
+                <input id="Senha" 
+                       name="Senha" 
                        minlegth= "6" 
                        maxlength= "8" 
                        equired="required" 
