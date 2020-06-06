@@ -1,0 +1,99 @@
+body { background-image: url("https://images6.alphacoders.com/475/thumb-1920-475412.jpg"); 
+       background-repeat: no-repeat;
+       background-size: 1400px;
+       
+    }
+    
+table{
+        background-image:url("https://images2.alphacoders.com/505/thumb-1920-505726.jpg");
+        background-repeat: no-repeat;
+        background-size: 800px;
+        background-position-x: 20%;
+    }
+
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    font-family: Times, Times;
+}
+.content{
+    width: 500px;
+    main-height: 560px;
+    margin: 0px auto;
+    position: relative;
+    
+}
+h1{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 2px 0 10px 0;
+    font-family: Times, Times;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 1px #000000;
+    padding-bottom: 20px;
+}
+h2{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 1px 0 10px 0;
+    font-family: Times, Times;
+    text-align: center;
+    text-shadow: 0 1px 1px #FFFFFF;
+    padding-bottom: 20px;
+}
+h3{
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: Times, Times;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 1px #000000;
+   
+}
+h1:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:2px;
+    margin-top: 10px;
+}
+label{
+    color: #FE2E2E;
+    position: relative;
+}
+::-webkit-input-placeholder{
+    color: #0B0B61;
+    font-style: italic;
+}
+input:not([type="checkbox"]){
+    
+    width: 60%;
+    margin-top: 9px;
+    padding: 6px;
+    border: 4px solid;
+    
+    -webkit-border-radius: 5px;  /* radius da borda  */
+    border-radius: 5px;
+    
+    -webkit-box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+    box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+    
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+/* Botão submit */
+input[type="submit"]{
+    width: 70%;
+    cursor: pointer;
+    background: no-repeat center/100% url(https://images8.alphacoders.com/430/thumb-1920-430264.jpg);
+    padding: 8px 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    text-shadow: 0 0px 1px #fff;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+    box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+}

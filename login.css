@@ -1,0 +1,180 @@
+body { background-image: url("https://images3.alphacoders.com/779/thumb-1920-77949.jpg"); 
+       background-repeat: no-repeat;
+       
+    }
+    
+ 
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    font-family: Times, Times;
+}
+
+
+.content{
+    width: 500px;
+    main-height: 560px;
+    margin: 0px auto;
+    position: relative;
+    
+}
+
+h1{
+    font-size: 48px;
+    color: #FFFFFF;
+    padding: 2px 0 10px 0;
+    font-family: Times, Times;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 1px #000000;
+    padding-bottom: 20px;
+}
+h2{
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 1px 0 10px 0;
+    font-family: Times, Times;
+    text-align: center;
+    text-shadow: 0 2px 1px #000000;
+    padding-bottom: 20px;
+}
+h3{
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 1px 0 10px 0;
+    font-family: Georgia, Times;
+    text-align: center;
+    text-shadow: 2px 2px #610B0B;
+    padding-bottom: 20px;
+}
+h1:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:2px;
+    margin-top: 10px;
+}
+p{
+    margin-bottom: 10px;
+}
+.content p:first-child{
+    margin: 0px;
+}
+label{
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px #000000;
+    position: relative;
+}
+::-webkit-input-placeholder{
+    color: #0B0B61;
+    font-style: italic;
+}
+
+input:moz-placeholder,
+textarea:moz-placeholder{
+    color: #0B0B61;
+    font-style: italic;
+}
+
+input{
+    outline: none;
+}
+
+input:not([type="checkbox"]){
+    
+    width: 50%;
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px solid;
+    
+    -webkit-border-radius: 7px;  /* radius da borda  */
+    border-radius: 7px;
+    
+    -webkit-box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+    box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+    
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+/* Botão submit */
+input[type="submit"]{
+    width: 35%;
+    cursor: pointer;
+    background: no-repeat center/100% url(https://images8.alphacoders.com/430/thumb-1920-430264.jpg);
+    padding: 8px 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    text-shadow: 0 0px 1px #fff;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+    box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+}
+
+/* BotÃ£o subimit no ->hover<-  */
+input[type="subimit"]:hover{
+    
+    background: cadetblue;
+    }
+    
+    @-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+    
+    #login{
+        position: fixed;
+        top: 58px;
+        left: 48px;
+        width: 35%;
+        height: 70%;
+        margin: 1px;
+        background: black; 
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 8px;
+        border-radius: 100px;
+
+    }
+    
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+ 
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+    

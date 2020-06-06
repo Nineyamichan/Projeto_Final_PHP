@@ -1,0 +1,68 @@
+
+<html>
+    <head>
+        <title> Login </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="login.css"/> 
+        <link rel="shortcut icon" 
+              href="https://pngimage.net/wp-content/uploads/2018/05/espada-laser-star-wars-png.ico" 
+              type="image/x-icon"/> <!-- Favicon -->
+    </head>
+    <body>
+        
+        <div class="content">
+            <a classe="links" id="realizarcadastro"> </a>    
+            <div classe="content"> </div>
+        </div>
+        
+        <div id="login">
+        <form method="post" 
+              action="Validar_senha.js" 
+              onSubmit="return validacampo()">
+            
+            <br><br><br><br>
+            <center>
+                
+            <h1> Login </h1>
+            <h3> Seja muito bem-vindo e que a força esteja com você! </h3>
+            <p>
+                <label for="login_user"> E-mail: </label>
+                <input id="login_user" 
+                       name="login_user" 
+                       required="required" 
+                       type ="email" 
+                       placeholder="Informe seu e-mail">
+            </p>
+            <p>
+                <label for="senha_user"> Senha: </label>
+                <input id="senha_user" 
+                       name="senha_user" 
+                       minlegth= "6" 
+                       maxlength= "8" 
+                       equired="required" 
+                       type="password" 
+                       placeholder="Informe sua senha"/>
+                <br><br>
+           </p>
+           
+            <p>
+                <input type="checkbox" 
+                       name="manterlogado" 
+                       id="manerlogado" value=""/>
+                
+                <label for ="materlogado">
+                    Manter conta conectada </label>
+            </p>
+                <input id="logar" 
+                       type="submit" 
+                       value="logar" onclick="" />
+                
+                <h2>  Não possui um cadastro? <br> <a href ="cadastro.html"> Cadastre-se aqui! </a> </h2>
+            </center>
+        </form>
+    </div>
+    </body>
+</html>
+
+ 
