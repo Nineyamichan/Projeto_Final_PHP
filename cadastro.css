@@ -7,9 +7,11 @@ body { background-image: url("https://images6.alphacoders.com/475/thumb-1920-475
 table{
         background-image:url("https://images2.alphacoders.com/505/thumb-1920-505726.jpg");
         background-repeat: no-repeat;
-        background-size: 800px;
+        background-size: 1000px;
         background-position-x: 20%;
     }
+    
+
 
 *,*:before,*:after{
     margin: 0;
@@ -61,10 +63,13 @@ h1:after{
 label{
     color: #FE2E2E;
     position: relative;
+    font-size: 20px;
+    margin-right: 0%;
 }
 ::-webkit-input-placeholder{
     color: #0B0B61;
     font-style: italic;
+    
 }
 input:not([type="checkbox"]){
     
@@ -82,6 +87,23 @@ input:not([type="checkbox"]){
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
+
+input[type="radio"]{
+    width: 8%;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-right: 10px;
+    font-size: 15px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    text-shadow: 0 0px 1px #fff;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+    box-shadow: inset 0 0 1em white, 0 0 1em red; /* cor da sombra da borda  */
+}
+
+
+
 /* Botão submit */
 input[type="submit"]{
     width: 70%;

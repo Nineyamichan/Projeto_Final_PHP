@@ -1,24 +1,35 @@
-
-
+ 
+<?php
+        $id = filter_input(INPUT_GET, "id");
+        $nome= filter_input(INPUT_GET, "nome");
+        $email = filter_input(INPUT_GET, "email");
+        $senha = filter_input(INPUT_GET, "senha");
+                
+        ?>
 <html>
     <head>
-        <title>Bem vindo!</title>
+        <title>Perfil</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="cadastro.css"/> 
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" 
+              type="text/css" 
+              href="perfil.css"/> 
         <link rel="shortcut icon" 
               href="https://www.iconninja.com/files/1005/127/662/star-wars-clone-helmet-storm-trooper-droid-icon.png" 
               type="image/x-icon"/> <!-- Favicon -->
     </head>
     <body>
     <center>
-          <br><br>
-        <h3>  Tela de Cadastro </h3>
-       <img src="https://vignette.wikia.nocookie.net/starwars-microheroes/images/a/a3/Emperor_Palpatine_by_Theo_Kyp_Serenno.gif/revision/latest/top-crop/width/220/height/220?cb=20120521021637" 
-            width=70 height=50>
+          <br><br>   
+        <h3>  Bem vindo ao seu perfil </h3>
+        <h3>  Se desejar alterar algo, pode alterar </h3>
         <br>
-            <form method="post" action="cadastro.php"> 
-        <table border="6" 
+            <form method="post" 
+                  action="perfil.php"> 
+            </form>
+      <table border="6" 
                style="border-color:#424242" > 
             <tr>
                 <td>
@@ -29,6 +40,12 @@
                        type ="text" 
                        placeholder="Informe seu nome"
                        > </h2>
+             <td>
+                <a href="Alterar.php">
+                <input  type="button" 
+                        accept=""
+                        value="Alterar">   
+                </a>        
             </tr>
             <tr>
              <td><h2><label for="Senha"> Senha: </label>
@@ -39,6 +56,12 @@
                        equired="required" 
                        type="password" 
                        placeholder="Informe sua senha"/> </h2>
+              <td>
+                <a href="Alterar.php">
+                <input  type="button" 
+                        accept=""
+                        value="Alterar">   
+                </a> 
             </tr>
             <tr>
                 <td><h2><label for="Email"> E-mail: </label>
@@ -47,6 +70,12 @@
                         required="required" 
                         type ="email" 
                         placeholder="Informe seu e-mail"> </h2>
+            <td>
+                <a href="Alterar.php">
+                <input  type="button" 
+                        accept=""
+                        value="Alterar">   
+                </a> 
             </tr>
             <tr>
                 <td><h2><label for="Data_Nascimento">  Data nascimento: </label>
@@ -55,9 +84,16 @@
                         required="required" 
                         type ="date" 
                         placeholder="Informe a data"> </h2>
+            <td>     
+                <a href="alterar.php">
+                <input  type="button" 
+                        accept=""
+                        value="Alterar">   
+                </a> 
             </tr>
             <tr>
                 <td>
+                    
                     <h2>
                         <label for="Lado"> Escolha o seu lado: </label><br>
                  <input type="radio" 
@@ -74,23 +110,31 @@
                         value="Luz">
                  
                  <label for="Luz">Lado Luz</label> <br>
-                    </h2>
-            </tr>
-            <tr>
-           <td> 
-            <center> 
-               <input id="cadastrar" 
-                       type="submit" 
-                       value="cadastrar" 
-                       onclick="" /> 
-            </center>
-            </tr>   
-            <tr>
-                <td> <h1>  Já possui uma conta? <br> 
-                    <a href ="login.html"> Logar! </a> </h1>
-            </tr>
-            </center>
-                </td>
+              </h2>
+                    <td>
+                <a href="excluir.php">
+                <input  type="button" 
+                        accept=""
+                        value="Excluir">   
+                </a> 
+                        <br><br>
+                <a href="alterar.php">
+                <input  type="button" 
+                        accept=""
+                        value="Alterar"> 
+                </a> 
+                    </td>
+                    
+            <tr>    
+            <td>
+                <h1>  Deseja excluir a conta? </h1> <br> 
+            <td>
+                <a href="excluir.php">
+                <input  type="button" 
+                        accept=""
+                        value="Excluir">   
+        </a>
+            </td> 
             </tr>
                 </table> 
             </form>
