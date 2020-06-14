@@ -31,6 +31,12 @@
         <link rel="shortcut icon" 
               href="https://www.iconninja.com/files/1005/127/662/star-wars-clone-helmet-storm-trooper-droid-icon.png" 
               type="image/x-icon"/> <!-- Favicon -->
+        
+         <p id="bemvindo"></p> <!-- Alerta de boas vindas -->
+        <script type="text/javascript">
+        alert("Seja Bem vindo!");
+        </script>
+ 
         <script type="text/javascript" src="https://www.scmplayer.net/script.js" 
                data-config="
         {'skin':'skins/black/skin.css',
